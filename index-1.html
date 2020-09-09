@@ -1,0 +1,36 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="pcap-to-flow-conversation-transcriptions">PCAP to flow conversation transcriptions</h1>
+<p>FIV, Sep 2020</p>
+<p>Scripts for transforming pcaps into flow converstation transcripts. The meaning of symbols is explained below.</p>
+<h2 id="example">Example</h2>
+<pre><code>bash run_pcap2trans.sh
+</code></pre>
+<h2 id="symbols">Symbols</h2>
+<ul>
+<li>
+<p><strong>'-'</strong> stands for 10ms without packet exchange.</p>
+</li>
+<li>
+<p><strong>Uppercase symbols</strong> stand for client-to-server packets (A&gt;B) </p>
+<blockquote>
+<p>symbol = int2ascii( abs(tcp_len/146) + 97)</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Lowercase symbols</strong> stand for server-to-client packets (B&gt;A)</p>
+<blockquote>
+<p>symbol = int2ascii( abs(tcp_len/146) + 65)</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="symbols_1">Symbols</h2>
+<ul>
+<li>'extract_features_from_pdml.py', script for extracting features from pcaps (python).</li>
+<li>'README.md', this file.</li>
+<li>'run_pcap2trans.sh', program example (bash).</li>
+<li>'symboltran_lt.pl', script for transforming packet tuples in tabular format into flow conversation transcriptions (perl). </li>
+<li>'test.pcap', example network data capture (pcap).</li>
+<li>'test_ft.csv', example file with packet feature tuples in tabular format (csv).</li>
+<li>'test_tr.txt', example file with the flow conversation trancriptions (txt).</li>
+</ul>
+</body></html>
