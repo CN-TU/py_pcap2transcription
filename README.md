@@ -2,7 +2,7 @@
 # PCAP to flow conversation transcriptions
 FIV, Sep 2020
 
-Scripts for transforming pcaps into flow converstation transcripts. The meaning of symbols is explained below.
+Scripts for transforming pcaps into flow converstation transcriptions. The meaning of symbols is explained below.
 
 ## Example
 
